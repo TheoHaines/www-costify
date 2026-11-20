@@ -1,470 +1,468 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Costify - UK Contract Cost Calculator</title>
+        <title>Costify - UK Contract Cost Calculator</title>
 
-		<meta
-			name="description"
-			content="Costify is a free UK contract cost calculator. Compare mobile, broadband, and utility contracts by total cost, trade-ins, cashback, and duration."
-		/>
-		<meta name="robots" content="index, follow" />
-		<link rel="canonical" href="https://costify.info/" />
+        <meta
+            name="description"
+            content="Costify is a free UK contract cost calculator. Compare mobile, broadband, and utility contracts by total cost, trade-ins, cashback, and duration."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://costify.info/" />
 
-		<meta property="og:type" content="website" />
-		<meta
-			property="og:title"
-			content="Costify - UK Contract Cost Calculator"
-		/>
-		<meta
-			property="og:description"
-			content="Compare UK contracts by true total cost, including cashback, trade-ins, and annual increases."
-		/>
-		<meta property="og:url" content="https://costify.info/" />
-		<meta property="og:site_name" content="Costify" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Costify - UK Contract Cost Calculator"
+        />
+        <meta
+            property="og:description"
+            content="Compare UK contracts by true total cost, including cashback, trade-ins, and annual increases."
+        />
+        <meta property="og:url" content="https://costify.info/" />
+        <meta property="og:site_name" content="Costify" />
 
-		<meta name="twitter:card" content="summary" />
-		<meta
-			name="twitter:title"
-			content="Costify - UK Contract Cost Calculator"
-		/>
-		<meta
-			name="twitter:description"
-			content="Free UK contract cost calculator with comparison tools."
-		/>
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:title"
+            content="Costify - UK Contract Cost Calculator"
+        />
+        <meta
+            name="twitter:description"
+            content="Free UK contract cost calculator with comparison tools."
+        />
 
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-		<link rel="stylesheet" href="/css/styles.css" />
-		<link rel="stylesheet" href="/css/index.css" />
-	</head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
 
-	<body>
-		<header class="navbar">
-			<div class="nav-container">
-				<a href="/" class="nav-logo" aria-label="Costify home">
-					<span>Costify</span>
-				</a>
-				<nav class="navbar-menu" aria-label="Primary navigation">
-					<a href="/changelog" class="nav-link">Change Log</a>
-				</nav>
-			</div>
-		</header>
+    <body>
+        <header class="navbar">
+            <div class="nav-container">
+                <a href="/" class="nav-logo" aria-label="Costify home">
+                    <span>Costify</span>
+                </a>
+                <nav class="navbar-menu" aria-label="Primary navigation">
+                    <a href="/changelog" class="nav-link">Change Log</a>
+                </nav>
+            </div>
+        </header>
 
-		<main class="page-shell">
-			<section class="hero" aria-labelledby="hero-title">
-				<p class="eyebrow">UK contract cost calculator</p>
-				<h1 id="hero-title">Compare the true cost of contracts.</h1>
-				<p class="hero-text">
-					Calculate mobile, broadband, and utility deals with upfront
-					costs, annual increases, trade-ins, cashback, and contract
-					length included.
-				</p>
-			</section>
+        <main class="page-shell">
+            <section class="hero" aria-labelledby="hero-title">
+                <p class="eyebrow">UK contract cost calculator</p>
+                <h1 id="hero-title">Compare the true cost of contracts.</h1>
+                <p class="hero-text">
+                    Calculate mobile, broadband, and utility deals with upfront
+                    costs, annual increases, trade-ins, cashback, and contract
+                    length included.
+                </p>
+            </section>
 
-			<section class="tabs-card" aria-label="Costify tools">
-				<div class="tabs" role="tablist" aria-label="Calculator tools">
-					<button
-						id="calculator-tab"
-						class="tab-btn active"
-						type="button"
-						role="tab"
-						aria-selected="true"
-						aria-controls="calculator-panel"
-						data-tab-target="calculator-panel"
-					>
-						Calculate
-					</button>
-					<button
-						id="compare-tab"
-						class="tab-btn"
-						type="button"
-						role="tab"
-						aria-selected="false"
-						aria-controls="compare-panel"
-						data-tab-target="compare-panel"
-						tabindex="-1"
-					>
-						Compare
-					</button>
-				</div>
+            <section class="tabs-card" aria-label="Costify tools">
+                <div class="tabs" role="tablist" aria-label="Calculator tools">
+                    <button
+                        id="calculator-tab"
+                        class="tab-btn active"
+                        type="button"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="calculator-panel"
+                        data-tab-target="calculator-panel"
+                    >
+                        Calculate
+                    </button>
+                    <button
+                        id="compare-tab"
+                        class="tab-btn"
+                        type="button"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="compare-panel"
+                        data-tab-target="compare-panel"
+                        tabindex="-1"
+                    >
+                        Compare
+                    </button>
+                </div>
 
-				<section
-					id="calculator-panel"
-					class="tab-content active"
-					role="tabpanel"
-					aria-labelledby="calculator-tab"
-				>
-					<div class="calculator-layout">
-						<section
-							id="calculator"
-							class="card calculator-card"
-							aria-labelledby="calculator-title"
-						>
-							<h2 id="calculator-title">Calculator</h2>
+                <section
+                    id="calculator-panel"
+                    class="tab-content active"
+                    role="tabpanel"
+                    aria-labelledby="calculator-tab"
+                >
+                    <div class="calculator-layout">
+                        <section
+                            id="calculator"
+                            class="card calculator-card"
+                            aria-labelledby="calculator-title"
+                        >
+                            <h2 id="calculator-title">Calculator</h2>
 
-							<form id="calculatorForm">
-								<div class="form-grid">
-									<div class="form-group">
-										<label for="contractMonthlyCost">
-											Monthly cost (£)
-										</label>
-										<input
-											id="contractMonthlyCost"
-											name="contractMonthlyCost"
-											type="number"
-											inputmode="decimal"
-											min="0"
-											step="0.01"
-											required
-											autocomplete="off"
-										/>
-									</div>
+                            <form id="calculatorForm">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="contractMonthlyCost">
+                                            Monthly cost (£)
+                                        </label>
+                                        <input
+                                            id="contractMonthlyCost"
+                                            name="contractMonthlyCost"
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="0.01"
+                                            required
+                                            autocomplete="off"
+                                        />
+                                    </div>
 
-									<div class="form-group">
-										<label for="contractUpfrontCost">
-											Upfront cost (£)
-										</label>
-										<input
-											id="contractUpfrontCost"
-											name="contractUpfrontCost"
-											type="number"
-											inputmode="decimal"
-											min="0"
-											step="0.01"
-											value="0"
-											autocomplete="off"
-										/>
-									</div>
+                                    <div class="form-group">
+                                        <label for="contractUpfrontCost">
+                                            Upfront cost (£)
+                                        </label>
+                                        <input
+                                            id="contractUpfrontCost"
+                                            name="contractUpfrontCost"
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="0.01"
+                                            value="0"
+                                            autocomplete="off"
+                                        />
+                                    </div>
 
-									<div class="form-group">
-										<label for="contractIncrease">
-											Annual increase (£)
-										</label>
-										<input
-											id="contractIncrease"
-											name="contractIncrease"
-											type="number"
-											inputmode="decimal"
-											min="0"
-											step="0.01"
-											value="1.8"
-											autocomplete="off"
-										/>
-									</div>
+                                    <div class="form-group">
+                                        <label for="contractIncrease">
+                                            Annual increase (£)
+                                        </label>
+                                        <input
+                                            id="contractIncrease"
+                                            name="contractIncrease"
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="0.01"
+                                            value="1.8"
+                                            autocomplete="off"
+                                        />
+                                    </div>
 
-									<div class="form-group">
-										<label for="contractDuration">
-											Duration (months)
-										</label>
-										<input
-											id="contractDuration"
-											name="contractDuration"
-											type="number"
-											inputmode="numeric"
-											min="1"
-											step="1"
-											value="24"
-											autocomplete="off"
-										/>
-									</div>
+                                    <div class="form-group">
+                                        <label for="contractDuration">
+                                            Duration (months)
+                                        </label>
+                                        <input
+                                            id="contractDuration"
+                                            name="contractDuration"
+                                            type="number"
+                                            inputmode="numeric"
+                                            min="1"
+                                            step="1"
+                                            value="24"
+                                            autocomplete="off"
+                                        />
+                                    </div>
 
-									<div class="form-group">
-										<label for="contractStartDate">
-											Start date
-										</label>
-										<input
-											id="contractStartDate"
-											name="contractStartDate"
-											type="date"
-											autocomplete="off"
-										/>
-									</div>
+                                    <div class="form-group">
+                                        <label for="contractStartDate">
+                                            Start date
+                                        </label>
+                                        <input
+                                            id="contractStartDate"
+                                            name="contractStartDate"
+                                            type="date"
+                                            autocomplete="off"
+                                        />
+                                    </div>
 
-									<div class="form-group">
-										<label for="tradeinSelected">
-											Trade-in
-										</label>
-										<select
-											id="tradeinSelected"
-											name="tradeinSelected"
-											aria-controls="tradeinMenu"
-										>
-											<option value="none">None</option>
-											<option value="tradein">Yes</option>
-										</select>
-									</div>
+                                    <div class="form-group">
+                                        <label for="tradeinSelected">
+                                            Trade-in
+                                        </label>
+                                        <select
+                                            id="tradeinSelected"
+                                            name="tradeinSelected"
+                                            aria-controls="tradeinMenu"
+                                        >
+                                            <option value="none">None</option>
+                                            <option value="tradein">Yes</option>
+                                        </select>
+                                    </div>
 
-									<div class="form-group">
-										<label for="cashbackType">
-											Cashback
-										</label>
-										<select
-											id="cashbackType"
-											name="cashbackType"
-											aria-controls="cashbackMenu"
-										>
-											<option value="none">None</option>
-											<option value="bacs">
-												Bank transfer
-											</option>
-										</select>
-									</div>
-								</div>
+                                    <div class="form-group">
+                                        <label for="cashbackType">
+                                            Cashback
+                                        </label>
+                                        <select
+                                            id="cashbackType"
+                                            name="cashbackType"
+                                            aria-controls="cashbackMenu"
+                                        >
+                                            <option value="none">None</option>
+                                            <option value="bacs">
+                                                Bank transfer
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
 
-								<div
-									id="tradeinMenu"
-									class="sub-panel"
-									hidden
-									aria-live="polite"
-								>
-									<div class="form-group">
-										<label for="tradeinAmount">
-											Trade-in amount (£)
-										</label>
-										<input
-											id="tradeinAmount"
-											name="tradeinAmount"
-											type="number"
-											inputmode="decimal"
-											min="0"
-											step="0.01"
-											value="0"
-											autocomplete="off"
-										/>
-									</div>
-								</div>
+                                <div
+                                    id="tradeinMenu"
+                                    class="sub-panel"
+                                    hidden
+                                    aria-live="polite"
+                                >
+                                    <div class="form-group">
+                                        <label for="tradeinAmount">
+                                            Trade-in amount (£)
+                                        </label>
+                                        <input
+                                            id="tradeinAmount"
+                                            name="tradeinAmount"
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="0.01"
+                                            value="0"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                </div>
 
-								<div
-									id="cashbackMenu"
-									class="sub-panel"
-									hidden
-									aria-live="polite"
-								>
-									<div class="form-group">
-										<label for="cashbackAmount">
-											Cashback amount (£)
-										</label>
-										<input
-											id="cashbackAmount"
-											name="cashbackAmount"
-											type="number"
-											inputmode="decimal"
-											min="0"
-											step="0.01"
-											value="0"
-											autocomplete="off"
-										/>
-									</div>
-								</div>
+                                <div
+                                    id="cashbackMenu"
+                                    class="sub-panel"
+                                    hidden
+                                    aria-live="polite"
+                                >
+                                    <div class="form-group">
+                                        <label for="cashbackAmount">
+                                            Cashback amount (£)
+                                        </label>
+                                        <input
+                                            id="cashbackAmount"
+                                            name="cashbackAmount"
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="0.01"
+                                            value="0"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                </div>
 
-								<button type="submit" class="btn-primary">
-									Calculate
-								</button>
-							</form>
-						</section>
+                                <button type="submit" class="btn-primary">
+                                    Calculate
+                                </button>
+                            </form>
+                        </section>
 
-						<aside
-							class="side-stack"
-							aria-label="Results and saved calculations"
-						>
-							<section
-								class="card result-card"
-								aria-labelledby="result-title"
-								aria-live="polite"
-							>
-								<h2 id="result-title">Result</h2>
-								<p id="youPayText" class="total">£0.00</p>
-								<p class="result-caption">
-									Estimated total cost
-								</p>
-							</section>
+                        <aside
+                            class="side-stack"
+                            aria-label="Results and saved calculations"
+                        >
+                            <section
+                                class="card result-card"
+                                aria-labelledby="result-title"
+                                aria-live="polite"
+                            >
+                                <h2 id="result-title">Result</h2>
+                                <p id="youPayText" class="total">£0.00</p>
+                                <p class="result-caption">
+                                    Estimated total cost
+                                </p>
+                            </section>
 
-							<section
-								id="saved"
-								class="card"
-								aria-labelledby="saved-title"
-							>
-								<h2 id="saved-title">Save calculation</h2>
+                            <section
+                                id="saved"
+                                class="card"
+                                aria-labelledby="saved-title"
+                            >
+                                <h2 id="saved-title">Save calculation</h2>
 
-								<div class="form-group">
-									<label for="calculationName">
-										Calculation name
-									</label>
-									<input
-										id="calculationName"
-										name="calculationName"
-										type="text"
-										placeholder="e.g. 24 month SIM deal"
-										autocomplete="off"
-									/>
-								</div>
+                                <div class="form-group">
+                                    <label for="calculationName">
+                                        Calculation name
+                                    </label>
+                                    <input
+                                        id="calculationName"
+                                        name="calculationName"
+                                        type="text"
+                                        placeholder="e.g. 24 month SIM deal"
+                                        autocomplete="off"
+                                    />
+                                </div>
 
-								<div class="button-row">
-									<button
-										id="saveBtn"
-										type="button"
-										class="btn-primary"
-									>
-										Save
-									</button>
-									<button
-										id="deleteBtn"
-										type="button"
-										class="btn-danger"
-									>
-										Delete
-									</button>
-								</div>
+                                <div class="button-row">
+                                    <button
+                                        id="saveBtn"
+                                        type="button"
+                                        class="btn-primary"
+                                    >
+                                        Save
+                                    </button>
+                                    <button
+                                        id="deleteBtn"
+                                        type="button"
+                                        class="btn-danger"
+                                    >
+                                        Delete
+                                    </button>
+                                </div>
 
-								<div class="form-group">
-									<label for="savedCalculationsSelect">
-										Load saved calculation
-									</label>
-									<select id="savedCalculationsSelect">
-										<option value="">Load saved...</option>
-									</select>
-								</div>
-							</section>
-						</aside>
-					</div>
-				</section>
+                                <div class="form-group">
+                                    <label for="savedCalculationsSelect">
+                                        Load saved calculation
+                                    </label>
+                                    <select id="savedCalculationsSelect">
+                                        <option value="">Load saved...</option>
+                                    </select>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                </section>
 
-				<section
-					id="compare-panel"
-					class="tab-content"
-					role="tabpanel"
-					aria-labelledby="compare-tab"
-					hidden
-				>
-					<section
-						id="compare"
-						class="card compare-card"
-						aria-labelledby="compare-title"
-					>
-						<div class="compare-header-row">
-							<div>
-								<h2 id="compare-title">Compare calculations</h2>
-								<p>
-									Choose two saved calculations to see which
-									contract offers better value.
-								</p>
-							</div>
-						</div>
+                <section
+                    id="compare-panel"
+                    class="tab-content"
+                    role="tabpanel"
+                    aria-labelledby="compare-tab"
+                    hidden
+                >
+                    <section
+                        id="compare"
+                        class="card compare-card"
+                        aria-labelledby="compare-title"
+                    >
+                        <div class="compare-header-row">
+                            <div>
+                                <h2 id="compare-title">Compare calculations</h2>
+                                <p>
+                                    Choose two saved calculations to see which
+                                    contract offers better value.
+                                </p>
+                            </div>
+                        </div>
 
-						<div class="compare-select-grid">
-							<div class="form-group">
-								<label for="compareSelect1">
-									First calculation
-								</label>
-								<select id="compareSelect1">
-									<option value="">Compare...</option>
-								</select>
-							</div>
+                        <div class="compare-select-grid">
+                            <div class="form-group">
+                                <label for="compareSelect1">
+                                    First calculation
+                                </label>
+                                <select id="compareSelect1">
+                                    <option value="">Compare...</option>
+                                </select>
+                            </div>
 
-							<div class="form-group">
-								<label for="compareSelect2">
-									Second calculation
-								</label>
-								<select id="compareSelect2">
-									<option value="">Compare...</option>
-								</select>
-							</div>
-						</div>
+                            <div class="form-group">
+                                <label for="compareSelect2">
+                                    Second calculation
+                                </label>
+                                <select id="compareSelect2">
+                                    <option value="">Compare...</option>
+                                </select>
+                            </div>
+                        </div>
 
-						<div
-							id="comparisonResults"
-							class="comparison-results"
-							aria-live="polite"
-						></div>
-					</section>
-				</section>
-			</section>
+                        <div
+                            id="comparisonResults"
+                            class="comparison-results"
+                            aria-live="polite"
+                        ></div>
+                    </section>
+                </section>
+            </section>
 
-			<section
-				class="bookmarklet-section"
-				aria-labelledby="bookmarklet-title"
-			>
-				<h2 id="bookmarklet-title">Bookmarklet</h2>
-				<p id="bookmarklet-instructions">
-					Drag this button to your bookmarks bar to instantly
-					calculate contract costs on the carphonewarehouse.com
-					website.
-				</p>
+            <section
+                class="bookmarklet-section"
+                aria-labelledby="bookmarklet-title"
+            >
+                <h2 id="bookmarklet-title">Bookmarklet</h2>
+                <p id="bookmarklet-instructions">
+                    Drag this button to your bookmarks bar to instantly
+                    calculate contract costs on the carphonewarehouse.com
+                    website.
+                </p>
 
-				<div class="bookmarklet-buttons">
-					<a
-						id="bookmarkletLink"
-						class="bookmarklet-btn bookmarklet-drag"
-						draggable="true"
-					>
-						Costify Quick Calculate
-					</a>
-					<button
-						id="bookmarkletCopy"
-						type="button"
-						class="btn-secondary bookmarklet-copy"
-					>
-						Copy for Mobile
-					</button>
-				</div>
+                <div class="bookmarklet-buttons">
+                    <a
+                        id="bookmarkletLink"
+                        class="bookmarklet-btn bookmarklet-drag"
+                        draggable="true"
+                    >
+                        Costify Quick Calculate
+                    </a>
+                    <button
+                        id="bookmarkletCopy"
+                        type="button"
+                        class="btn-secondary bookmarklet-copy"
+                    >
+                        Copy for Mobile
+                    </button>
+                </div>
 
-				<div id="bookmarkletModal" class="bookmarklet-modal" hidden>
-					<div class="bookmarklet-modal-content">
-						<button
-							type="button"
-							id="bookmarkletModalClose"
-							class="modal-close"
-							aria-label="Close"
-						>
-							
-						</button>
-						<h3>Add to Mobile Browser</h3>
-						<ol class="bookmarklet-steps">
-							<li>Copy the code above</li>
-							<li>Open your browser's bookmark menu</li>
-							<li>Create a new bookmark</li>
-							<li>Paste the code in the URL field</li>
-							<li>Name it "Costify Quick Calculate"</li>
-							<li>Save and use on the carphonewarehouse.com site</li>
-						</ol>
-						<textarea
-							id="bookmarkletCode"
-							class="bookmarklet-code"
-							readonly
-							aria-label="Bookmarklet code"
-						></textarea>
-						<button
-							id="bookmarkletCodeCopy"
-							type="button"
-							class="btn-primary"
-						>
-							Copy Code
-						</button>
-					</div>
-				</div>
-			</section>
-		</main>
+                <div id="bookmarkletModal" class="bookmarklet-modal" hidden>
+                    <div class="bookmarklet-modal-content">
+                        <button
+                            type="button"
+                            id="bookmarkletModalClose"
+                            class="modal-close"
+                            aria-label="Close"
+                        ></button>
+                        <h3>Add to Mobile Browser</h3>
+                        <ol class="bookmarklet-steps">
+                            <li>Copy the code above</li>
+                            <li>Open your browser's bookmark menu</li>
+                            <li>Create a new bookmark</li>
+                            <li>Paste the code in the URL field</li>
+                            <li>Name it "Costify Quick Calculate"</li>
+                            <li>
+                                Save and use on the carphonewarehouse.com site
+                            </li>
+                        </ol>
+                        <textarea
+                            id="bookmarkletCode"
+                            class="bookmarklet-code"
+                            readonly
+                            aria-label="Bookmarklet code"
+                        ></textarea>
+                        <button
+                            id="bookmarkletCodeCopy"
+                            type="button"
+                            class="btn-primary"
+                        >
+                            Copy Code
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-		<footer class="footer">
-			<div class="footer-bottom">
-				<p class="footer-copyright">
-					&copy; 2026 Costify. All rights reserved. Made with love by
-					<a href="https://theohaines.company">
-						The Theo Haines Company</a
-					>.
-				</p>
-			</div>
-		</footer>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 Costify. All rights reserved. Made by
+                    <a href="https://neotekyalabs.com">Neo-Tekya Labs</a>.
+                </p>
+            </div>
+        </footer>
 
-		<div
-			id="toastContainer"
-			class="toast-container"
-			aria-live="polite"
-			aria-atomic="true"
-		></div>
+        <div
+            id="toastContainer"
+            class="toast-container"
+            aria-live="polite"
+            aria-atomic="true"
+        ></div>
 
-		<script type="module" src="/js/index.js"></script>
-	</body>
+        <script type="module" src="/js/index.js"></script>
+    </body>
 </html>
